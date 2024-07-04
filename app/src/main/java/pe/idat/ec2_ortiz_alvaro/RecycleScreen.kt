@@ -105,5 +105,30 @@ fun listartest(): List<test> {
             "",
             R.drawable.ic_launcher_background
         ),
+        test(
+            "Cuestionario de Personalidad de Eyesenck", "Evaluacipon de las dimensiones de la personalidad",
+            "",
+            R.drawable.ic_launcher_background
+        ),
+        test(
+            "Escala de ansiedad de Hamilton", "Cuestionario clínico para medir la ansiedad",
+            "",
+            R.drawable.ic_launcher_background
+        ),
+        test(
+            "Inventario de ansiedad Estado-Rasgo", "Evaluación de la ansiedad como un estado temporal y parte de la personalidad",
+            "",
+            R.drawable.ic_launcher_background
+        ),
+        test(
+            "Test de Stroop", "Evalua la atención selectiva",
+            "",
+            R.drawable.ic_launcher_background
+        ),
+        test(
+            "Test de dender Gestalt", "Evaluación del desarrollo preceptivo motor",
+            "",
+            R.drawable.ic_launcher_background
+        ),
     )
 }
