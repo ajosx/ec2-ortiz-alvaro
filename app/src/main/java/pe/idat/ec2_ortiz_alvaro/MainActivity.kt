@@ -37,7 +37,15 @@ class MainActivity : ComponentActivity() {
                     EjemploDivider()
                     platosfavoritos(nombre) { nombre = it }
                     EjemploDivider()
-
+                    pregunta2(nombre) {nombre = it}
+                    EjemploDivider()
+                    pregunta3(nombre) {nombre = it}
+                    EjemploDivider()
+                    pregunta4(nombre) {nombre = it}
+                    EjemploDivider()
+                    pregunta5(nombre) {nombre = it}
+                    EjemploDivider()
+                    button()
                 }
             }
         }

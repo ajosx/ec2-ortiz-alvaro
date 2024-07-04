@@ -103,15 +103,91 @@ fun platosfavoritos(nombre: String, onItemSelected: (String) -> Unit) {
 
 
 @Composable
-fun preguntas(){}
+fun pregunta2(nombre: String, onItemSelected: (String) -> Unit) {
+    Column(Modifier.fillMaxWidth()) {
+        Text(text = "2. ¿Visitaste algún pais en Europa, Asia o Africa?")
+        Row(){
+        Row(
+            Modifier.padding(5.dp)
+        ) {
+            RadioButton(selected = nombre == "SI", onClick = { onItemSelected("SI") })
+            Text(text = "SI", Modifier.padding(top = 10.dp))
+        }
+        Row(
+            Modifier.padding(5.dp)
+        ) {
+            RadioButton(selected = nombre == "NO", onClick = { onItemSelected("NO") })
+            Text(text = "NO", Modifier.padding(top = 10.dp))
+        }}
+    } }
+
+@Composable
+fun pregunta3(nombre: String, onItemSelected: (String) -> Unit) {
+    Column(Modifier.fillMaxWidth()) {
+        Text(text = "3. ¿Hablas Inglés?")
+        Row(){
+            Row(
+                Modifier.padding(5.dp)
+            ) {
+                RadioButton(selected = nombre == "SI", onClick = { onItemSelected("SI") })
+                Text(text = "SI", Modifier.padding(top = 10.dp))
+            }
+            Row(
+                Modifier.padding(5.dp)
+            ) {
+                RadioButton(selected = nombre == "NO", onClick = { onItemSelected("NO") })
+                Text(text = "NO", Modifier.padding(top = 10.dp))
+            }}
+    } }
+
+@Composable
+fun pregunta4(nombre: String, onItemSelected: (String) -> Unit) {
+    Column(Modifier.fillMaxWidth()) {
+        Text(text = "4. ¿Te gusta la tecnología?")
+        Row(){
+            Row(
+                Modifier.padding(5.dp)
+            ) {
+                RadioButton(selected = nombre == "SI", onClick = { onItemSelected("SI") })
+                Text(text = "SI", Modifier.padding(top = 10.dp))
+            }
+            Row(
+                Modifier.padding(5.dp)
+            ) {
+                RadioButton(selected = nombre == "NO", onClick = { onItemSelected("NO") })
+                Text(text = "NO", Modifier.padding(top = 10.dp))
+            }}
+    } }
+
+@Composable
+fun pregunta5(nombre: String, onItemSelected: (String) -> Unit) {
+    Column(Modifier.fillMaxWidth()) {
+        Text(text = "4. ¿Realizas trabajo remoto?")
+        Row(){
+            Row(
+                Modifier.padding(5.dp)
+            ) {
+                RadioButton(selected = nombre == "SI", onClick = { onItemSelected("SI") })
+                Text(text = "SI", Modifier.padding(top = 10.dp))
+            }
+            Row(
+                Modifier.padding(5.dp)
+            ) {
+                RadioButton(selected = nombre == "NO", onClick = { onItemSelected("NO") })
+                Text(text = "NO", Modifier.padding(top = 10.dp))
+            }}
+    } }
+
+@Composable
+fun button(){}
 
 @Composable
 fun EjemploDivider() {
     Divider(
         Modifier
             .fillMaxWidth()
-            .padding(top = 12.dp),
-        color = Color.Blue
+            .padding(top = 5.dp),
+        color = Color.White
     )
 }
 
